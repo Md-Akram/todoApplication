@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,12 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <link rel="stylesheet" href="style.css">
-  
+
   <title>Todo app</title>
 
 
 </head>
+
 <body>
 
   <div class="background-image">
@@ -84,21 +86,24 @@
       </div>
       <div class="todo-info">
         <div class="left">
-          3 items left
+          <span class="number"></span> item(s) left
         </div>
         <div class="status">
-          <span class="active">All</span>
-          <span>Active</span>
-          <span>Completed</span>
+          <span class="all active">All</span>
+          <span class="active-span">Active</span>
+          <span class="completed">Completed</span>
         </div>
         <div class="clear">
-          <span>Clear Completed</span>
+          Clear Completed
         </div>
       </div>
     </div>
   </div>
 
-
-<script src="script.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <script src="firebase.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
